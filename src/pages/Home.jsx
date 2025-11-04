@@ -68,7 +68,7 @@ function Home() {
               // icon={category.icon}
               href={category.href}
               features={category.services.slice(0, 4).map((s) => s.name)}
-              image={defaultImages[index % defaultImages.length]} // fallback
+              image={defaultImages[index % defaultImages.length]} 
             />
           ))}
         </div>

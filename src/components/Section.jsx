@@ -8,9 +8,9 @@ function Section({
   children,
   className = "",
   background = "white",
-  image = null, // 🖼️ new: optional image
+  image = null, 
   imageAlt = "Section illustration",
-  imagePosition = "right", // "left" | "right" | "center"
+  imagePosition = "right",
 }) {
   const sectionRef = useRef(null);
 
@@ -20,7 +20,6 @@ function Section({
     pattern: "bg-accent-50 bg-grid-pattern",
   };
 
-  // 🪄 GSAP fade-in animation on scroll
   useEffect(() => {
     const el = sectionRef.current;
     if (el) {
@@ -55,7 +54,7 @@ function Section({
           </div>
         )}
 
-        {/* 🧩 If image is provided, use grid layout */}
+       
         {image ? (
           <div
             className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
